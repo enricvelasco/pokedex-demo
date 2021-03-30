@@ -27,7 +27,7 @@ const httpMethod = {
 
 const initApp = async () => {
     const originalPokemons = await httpMethod.get(urls.allOriginalPokemonUrl);
-    console.log('ORIGINAL_POKEMONS', originalPokemons);
+    console.log('CAMBIO_VISIBLE', originalPokemons);
 
     const pikachu = await httpMethod.get(urls.pokemonDataByName('pikachu'));
     console.log('PICACHU_DATA_BY_NAME', pikachu);
